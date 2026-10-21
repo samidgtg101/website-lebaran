@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" width="340" height="64" fill="none" role="img" aria-label="Saka Souvenir Lebaran Logo">
+  <!-- Crescent Moon & Khatam Star -->
+  <g transform="translate(4, 4)">
+    <circle cx="28" cy="28" r="26" fill="#DFF3E8"/>
+    <!-- Crescent Moon -->
+    <path d="M38 12a18 18 0 1 0 0 32 15 15 0 0 1 0-32z" fill="#2E7D5B"/>
+    <!-- 8-Pointed Star (Rub el Hizb) in Gold -->
+    <g transform="translate(38, 20) scale(0.7)">
+      <path d="M10 0 L13 7 L20 10 L13 13 L10 20 L7 13 L0 10 L7 7 Z" fill="#C9A23F"/>
+      <path d="M10 0 L13 7 L20 10 L13 13 L10 20 L7 13 L0 10 L7 7 Z" fill="#C9A23F" transform="rotate(45 10 10)"/>
+      <circle cx="10" cy="10" r="2.5" fill="#FFF9EC"/>
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <text x="68" y="32" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#16372A" letter-spacing="-0.3">Saka Souvenir</text>
+  <text x="69" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#4F6B5E" letter-spacing="2">HAMPERS &amp; GIFT LEBARAN</text>
+</svg>

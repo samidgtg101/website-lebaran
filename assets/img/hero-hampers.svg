@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500" fill="none">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F8EE"/>
+      <stop offset="50%" stop-color="#DDF3E7"/>
+      <stop offset="100%" stop-color="#FFF8E8"/>
+    </linearGradient>
+    <linearGradient id="boxFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#246448"/>
+      <stop offset="100%" stop-color="#2E7D5B"/>
+    </linearGradient>
+    <linearGradient id="boxLid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#368D67"/>
+      <stop offset="100%" stop-color="#286E4F"/>
+    </linearGradient>
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E2BF63"/>
+      <stop offset="50%" stop-color="#F9E8B6"/>
+      <stop offset="100%" stop-color="#C9A23F"/>
+    </linearGradient>
+    <radialGradient id="jarGlow" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#FAF4E1" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#DECCA2" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#16372A" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="500" rx="24" fill="url(#heroBg)"/>
+
+  <!-- Subtle Islamic Geometry / Circles in background -->
+  <g opacity="0.15" stroke="#2E7D5B" stroke-width="1.2">
+    <circle cx="500" cy="100" r="80"/>
+    <circle cx="500" cy="100" r="60"/>
+    <circle cx="500" cy="100" r="40"/>
+    <path d="M500 20 L500 180 M420 100 L580 100"/>
+  </g>
+
+  <!-- Hanging Decorative Lantern (Fanous) -->
+  <g transform="translate(100, 0)">
+    <line x1="0" y1="0" x2="0" y2="70" stroke="#C9A23F" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="0" cy="72" r="3" fill="#C9A23F"/>
+    <path d="M-14 80 L14 80 L8 115 L-8 115 Z" fill="#2E7D5B"/>
+    <rect x="-8" y="115" width="16" height="4" fill="#C9A23F"/>
+    <path d="M-6 83 L6 83 L4 112 L-4 112 Z" fill="#FFF2BD" opacity="0.8"/>
+    <circle cx="0" cy="98" r="4" fill="#EFA22F"/>
+    <polygon points="0,120 -4,130 4,130" fill="#C9A23F"/>
+  </g>
+
+  <!-- Big Decorative Crescent Moon Top Right -->
+  <path d="M520 60 A65 65 0 1 0 520 170 A52 52 0 0 1 520 60 Z" fill="#C9A23F" opacity="0.85" filter="url(#softShadow)"/>
+  <!-- 8-pointed star beside crescent -->
+  <g transform="translate(450, 75) scale(0.9)">
+    <polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#2E7D5B"/>
+    <polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#2E7D5B" transform="rotate(45 12 12)"/>
+    <circle cx="12" cy="12" r="3" fill="#C9A23F"/>
+  </g>
+
+  <!-- Hamper Gift Arrangement (Main Focus) -->
+  <g filter="url(#softShadow)" transform="translate(40, 110)">
+    <!-- Main Rigid Luxury Box -->
+    <rect x="70" y="130" width="380" height="190" rx="16" fill="url(#boxFront)"/>
+    <!-- Box Inner Edge / Rim -->
+    <rect x="66" y="122" width="388" height="18" rx="8" fill="url(#boxLid)"/>
+    
+    <!-- Satin Gold Ribbon Vertical -->
+    <rect x="180" y="122" width="34" height="198" fill="url(#goldRibbon)"/>
+    <!-- Gold Ribbon Trim line -->
+    <line x1="184" y1="122" x2="184" y2="320" stroke="#FFF" stroke-width="1" opacity="0.6"/>
+
+    <!-- Prayer Rug (Sajadah Lipat Travel) tucked inside box -->
+    <g transform="translate(95, 45)">
+      <rect x="0" y="20" width="105" height="120" rx="8" fill="#4B7764"/>
+      <!-- Pattern on prayer rug -->
+      <path d="M15 45 Q52 15 90 45 L90 120 L15 120 Z" fill="#315B4A"/>
+      <path d="M22 55 Q52 30 82 55 L82 110 L22 110 Z" stroke="#C9A23F" stroke-width="1.5" fill="none"/>
+      <!-- Fringes/rumbai -->
+      <line x1="20" y1="140" x2="20" y2="148" stroke="#C9A23F" stroke-width="2"/>
+      <line x1="35" y1="140" x2="35" y2="148" stroke="#C9A23F" stroke-width="2"/>
+      <line x1="50" y1="140" x2="50" y2="148" stroke="#C9A23F" stroke-width="2"/>
+      <line x1="65" y1="140" x2="65" y2="148" stroke="#C9A23F" stroke-width="2"/>
+      <line x1="80" y1="140" x2="80" y2="148" stroke="#C9A23F" stroke-width="2"/>
+    </g>
+
+    <!-- Glass Jar 1: Nastar Cookies with Gold Lid -->
+    <g transform="translate(230, 40)">
+      <!-- Jar Body Glass -->
+      <rect x="0" y="25" width="95" height="110" rx="14" fill="url(#jarGlow)"/>
+      <rect x="0" y="25" width="95" height="110" rx="14" stroke="#FFF" stroke-width="2" fill="none" opacity="0.8"/>
+      <!-- Cookies inside (golden balls) -->
+      <circle cx="28" cy="55" r="13" fill="#E6A838"/>
+      <circle cx="29" cy="53" r="3" fill="#583101"/> <!-- cengkeh nastar -->
+      <circle cx="65" cy="55" r="13" fill="#EDAF40"/>
+      <circle cx="66" cy="53" r="3" fill="#583101"/>
+      <circle cx="46" cy="85" r="14" fill="#E09F30"/>
+      <circle cx="47" cy="83" r="3" fill="#583101"/>
+      <circle cx="25" cy="105" r="12" fill="#E8AB3B"/>
+      <circle cx="68" cy="105" r="13" fill="#EAA833"/>
+      <!-- Jar Label -->
+      <rect x="12" y="70" width="71" height="24" rx="4" fill="#FFF9EC"/>
+      <text x="47" y="86" font-family="'Fraunces', serif" font-size="9" font-weight="700" fill="#16372A" text-anchor="middle">NASTAR ROYAL</text>
+      <!-- Gold Lid -->
+      <rect x="-4" y="10" width="103" height="18" rx="6" fill="url(#goldRibbon)"/>
+    </g>
+
+    <!-- Glass Jar 2: Kastengel / Kurma Ajwa -->
+    <g transform="translate(345, 55)">
+      <!-- Jar Body Glass -->
+      <rect x="0" y="25" width="90" height="100" rx="14" fill="url(#jarGlow)"/>
+      <rect x="0" y="25" width="90" height="100" rx="14" stroke="#FFF" stroke-width="2" fill="none" opacity="0.8"/>
+      <!-- Kastengel bars inside -->
+      <rect x="18" y="45" width="22" height="12" rx="2" fill="#DFA346"/>
+      <rect x="48" y="45" width="24" height="12" rx="2" fill="#E5AC4E"/>
+      <rect x="22" y="65" width="26" height="12" rx="2" fill="#D39335"/>
+      <rect x="52" y="65" width="22" height="12" rx="2" fill="#E0A442"/>
+      <rect x="30" y="85" width="28" height="12" rx="2" fill="#E8B054"/>
+      <!-- Jar Label -->
+      <rect x="10" y="68" width="70" height="22" rx="4" fill="#FFF9EC"/>
+      <text x="45" y="83" font-family="'Fraunces', serif" font-size="8.5" font-weight="700" fill="#16372A" text-anchor="middle">KASTENGEL KEJU</text>
+      <!-- Gold Lid -->
+      <rect x="-3" y="12" width="96" height="16" rx="5" fill="url(#goldRibbon)"/>
+    </g>
+
+    <!-- Crystal Tasbih Beads draping across -->
+    <path d="M120 160 Q 200 240 280 200 T 380 220" stroke="#C9A23F" stroke-width="1.5" fill="none"/>
+    <g fill="#EAD598" stroke="#B88E28" stroke-width="0.8">
+      <circle cx="130" cy="168" r="4.5"/>
+      <circle cx="145" cy="180" r="4.5"/>
+      <circle cx="162" cy="195" r="4.5"/>
+      <circle cx="180" cy="208" r="4.5"/>
+      <circle cx="200" cy="216" r="4.5"/>
+      <circle cx="220" cy="215" r="4.5"/>
+      <circle cx="240" cy="208" r="4.5"/>
+      <circle cx="260" cy="202" r="4.5"/>
+      <circle cx="280" cy="200" r="4.5"/>
+      <circle cx="305" cy="204" r="4.5"/>
+      <circle cx="330" cy="212" r="4.5"/>
+      <circle cx="355" cy="218" r="4.5"/>
+    </g>
+    <!-- Tasbih tassel -->
+    <polygon points="120,165 110,185 116,185" fill="#C9A23F"/>
+
+    <!-- Eid Al-Fitr Greeting Tag with Gold Ribbon Bow -->
+    <g transform="translate(160, 110)">
+      <!-- Ribbon Bow Loops -->
+      <path d="M25 15 C-5 5 -5 -15 20 -5 Z" fill="url(#goldRibbon)"/>
+      <path d="M45 15 C75 5 75 -15 50 -5 Z" fill="url(#goldRibbon)"/>
+      <circle cx="35" cy="8" r="9" fill="#B38E32"/>
+      
+      <!-- Greeting Card Hang Tag -->
+      <g transform="translate(5, 18) rotate(6)">
+        <polygon points="0,0 60,0 60,85 0,85" rx="4" fill="#FFFDF8" stroke="#C3E6D2" stroke-width="1"/>
+        <circle cx="30" cy="8" r="3.5" fill="#2E7D5B"/>
+        <!-- Star Motif on card -->
+        <path d="M30 20 l2 4 5 1 -4 3 1 5 -4 -2 -4 2 1 -5 -4 -3 5 -1 z" fill="#C9A23F"/>
+        <text x="30" y="44" font-family="'Fraunces', serif" font-size="7.5" font-weight="700" fill="#16372A" text-anchor="middle">EID MUBARAK</text>
+        <text x="30" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="500" fill="#4F6B5E" text-anchor="middle">Taqabbalallahu</text>
+        <text x="30" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="500" fill="#4F6B5E" text-anchor="middle">Minna Wa Minkum</text>
+      </g>
+    </g>
+
+    <!-- Box Front Text / Gold Calligraphy Motif -->
+    <g transform="translate(230, 240)">
+      <text x="70" y="10" font-family="'Amiri', serif" font-size="28" fill="#F3E5B5" text-anchor="middle">عيد مبارك</text>
+      <text x="70" y="32" font-family="'Fraunces', serif" font-size="13" font-weight="600" fill="#FFF9EC" text-anchor="middle" letter-spacing="2">SAKA SOUVENIR LEBARAN</text>
+    </g>
+  </g>
+</svg>

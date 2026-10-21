@@ -1,0 +1,224 @@
+/**
+ * base.css — Base typography, resets, patterns & layout rules
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--c-ink);
+  background-color: var(--c-mint-50);
+  line-height: 1.65;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fluid Typography */
+h1, .h1 {
+  font-family: var(--font-head);
+  color: var(--c-ink);
+  font-size: clamp(2.25rem, 1.6rem + 3vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+h2, .h2 {
+  font-family: var(--font-head);
+  color: var(--c-ink);
+  font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.875rem;
+}
+
+h3, .h3 {
+  font-family: var(--font-head);
+  color: var(--c-ink);
+  font-size: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+h4, .h4 {
+  font-family: var(--font-head);
+  color: var(--c-ink);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--c-ink);
+}
+
+.lead {
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--c-text-muted);
+}
+
+.text-muted {
+  color: var(--c-text-muted) !important;
+}
+
+.text-gold {
+  color: var(--c-gold) !important;
+}
+
+.text-ink {
+  color: var(--c-ink) !important;
+}
+
+.font-head {
+  font-family: var(--font-head) !important;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic) !important;
+  font-size: 1.3em;
+}
+
+/* Accessibility Focus Ring */
+:focus-visible {
+  outline: 3px solid var(--c-gold) !important;
+  outline-offset: 3px !important;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--c-primary-dark);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: var(--r-sm);
+  z-index: 9999;
+  text-decoration: none;
+  font-weight: 600;
+  transition: top var(--t-fast);
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Section Spacing */
+.section-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 992px) {
+  .section-padding {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+.section-padding-sm {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Background Patterns & Utilities */
+.bg-mint-50 {
+  background-color: var(--c-mint-50) !important;
+}
+
+.bg-mint-100 {
+  background-color: var(--c-mint-100) !important;
+}
+
+.bg-cream {
+  background-color: var(--c-cream) !important;
+}
+
+.bg-cream-50 {
+  background-color: var(--c-cream-50) !important;
+}
+
+.bg-primary-dark {
+  background-color: var(--c-primary-dark) !important;
+}
+
+.bg-pattern {
+  background-color: var(--c-mint-50);
+  background-image:
+    radial-gradient(circle at 20px 20px, rgba(46, 125, 91, 0.07) 2px, transparent 3px),
+    radial-gradient(circle at 60px 60px, rgba(201, 162, 63, 0.12) 2px, transparent 3px);
+  background-size: 80px 80px;
+}
+
+.bg-pattern-cream {
+  background-color: var(--c-cream);
+  background-image:
+    radial-gradient(circle at 20px 20px, rgba(46, 125, 91, 0.06) 2px, transparent 3px),
+    radial-gradient(circle at 60px 60px, rgba(201, 162, 63, 0.10) 2px, transparent 3px);
+  background-size: 80px 80px;
+}
+
+.bg-pattern-dark {
+  background-color: var(--c-primary-dark);
+  background-image:
+    radial-gradient(circle at 25px 25px, rgba(201, 162, 63, 0.15) 1.5px, transparent 2px),
+    radial-gradient(circle at 75px 75px, rgba(223, 243, 232, 0.08) 2px, transparent 3px);
+  background-size: 100px 100px;
+}
+
+/* Decorative Divider with Star */
+.divider-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+  width: 100%;
+  max-width: 320px;
+}
+
+.divider-star::before,
+.divider-star::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--c-mint-200), var(--c-gold));
+}
+
+.divider-star::after {
+  background: linear-gradient(to left, transparent, var(--c-mint-200), var(--c-gold));
+}
+
+.divider-star svg {
+  margin: 0 16px;
+  flex-shrink: 0;
+}
+
+/* Reduced Motion Mode */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

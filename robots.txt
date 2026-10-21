@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Crawler AI search (izinkan untuk visibilitas GEO)
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+# Crawler pelatihan model
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://sakasouvenir.id/sitemap.xml

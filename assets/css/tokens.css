@@ -1,0 +1,71 @@
+/**
+ * tokens.css — Design Tokens Website Souvenir & Gift Lebaran
+ * Theme: Mint & Sage Green, Crescent Moon & Gold Accent, Warm Elegance
+ */
+:root {
+  /* Color Palette */
+  --c-primary: #2E7D5B;
+  --c-primary-dark: #1F5C42;
+  --c-primary-light: #3e9871;
+  --c-ink: #16372A;
+  --c-mint-50: #F2FBF6;
+  --c-mint-100: #DFF3E8;
+  --c-mint-200: #C3E6D2;
+  --c-sage-300: #A8D5BA;
+  --c-gold: #C9A23F;
+  --c-gold-hover: #b38e32;
+  --c-gold-soft: #F3E5B5;
+  --c-gold-light: #FFF6DD;
+  --c-cream: #FFF9EC;
+  --c-cream-50: #FFFCF7;
+  --c-text-muted: #4F6B5E;
+  --c-wa: #25D366;
+  --c-wa-dark: #128C4A;
+  --c-danger: #B3261E;
+  --c-white: #FFFFFF;
+
+  /* Typography */
+  --font-head: "Fraunces", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-arabic: "Amiri", serif;
+
+  /* Spacing Scale */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+
+  /* Border Radii */
+  --r-sm: 8px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+  --r-arch: 200px 200px 24px 24px;
+
+  /* Shadows */
+  --sh-sm: 0 2px 8px rgba(22, 55, 42, 0.06);
+  --sh-md: 0 8px 24px rgba(22, 55, 42, 0.10);
+  --sh-lg: 0 16px 40px rgba(22, 55, 42, 0.14);
+  --sh-gold: 0 8px 20px rgba(201, 162, 63, 0.22);
+
+  /* Transitions */
+  --t-fast: 180ms ease-out;
+  --t-normal: 250ms ease-out;
+
+  /* Bootstrap 5.3 Overrides */
+  --bs-primary: #2E7D5B;
+  --bs-primary-rgb: 46, 125, 91;
+  --bs-body-bg: var(--c-mint-50);
+  --bs-body-color: var(--c-ink);
+  --bs-body-font-family: var(--font-body);
+  --bs-link-color: var(--c-primary);
+  --bs-link-hover-color: var(--c-primary-dark);
+  --bs-border-radius: var(--r-md);
+  --bs-border-color: var(--c-mint-200);
+}

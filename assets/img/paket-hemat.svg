@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none">
+  <defs>
+    <linearGradient id="pouchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF7F0"/>
+      <stop offset="100%" stop-color="#D7EFE2"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5B5"/>
+      <stop offset="100%" stop-color="#C9A23F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="#F2FBF6"/>
+  <!-- Decorative Background Crescent -->
+  <path d="M350 30 A50 50 0 1 0 350 110 A40 40 0 0 1 350 30 Z" fill="#C3E6D2" opacity="0.6"/>
+
+  <!-- Canvas Pouch / Goodie Bag -->
+  <g transform="translate(100, 35)">
+    <!-- Canvas handles -->
+    <path d="M60 40 C60 0 140 0 140 40" stroke="#2E7D5B" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Bag Body -->
+    <rect x="20" y="38" width="160" height="190" rx="16" fill="url(#pouchGrad)" stroke="#A8D5BA" stroke-width="2"/>
+    
+    <!-- Printed Islamic motif on bag -->
+    <g transform="translate(100, 110)">
+      <circle cx="0" cy="0" r="32" fill="#DFF3E8"/>
+      <!-- Crescent & Star -->
+      <path d="M8 -16 A16 16 0 1 0 8 16 A12 12 0 0 1 8 -16 Z" fill="#2E7D5B"/>
+      <path d="M10 -6 l1.5 3 3.5.5 -2.5 2.5 .6 3.5 -3.1-1.6 -3.1 1.6 .6-3.5 -2.5-2.5 3.5-.5 z" fill="#C9A23F"/>
+      <text x="0" y="50" font-family="'Fraunces', serif" font-size="12" font-weight="700" fill="#16372A" text-anchor="middle">BERKAH LEBARAN</text>
+      <text x="0" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#4F6B5E" text-anchor="middle">Paket Hemat</text>
+    </g>
+
+    <!-- Cookie Jar Peeking out -->
+    <g transform="translate(140, 20)">
+      <rect x="0" y="10" width="70" height="75" rx="10" fill="#FFF8E7" stroke="#E3C985" stroke-width="1.5"/>
+      <rect x="-3" y="2" width="76" height="12" rx="4" fill="url(#gold)"/>
+      <circle cx="22" cy="35" r="9" fill="#E6A838"/>
+      <circle cx="48" cy="35" r="9" fill="#E6A838"/>
+      <circle cx="35" cy="55" r="9" fill="#E6A838"/>
+      <text x="35" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="700" fill="#16372A" text-anchor="middle">NASTAR</text>
+    </g>
+
+    <!-- Digital Tasbih & Hang Tag -->
+    <g transform="translate(15, 140)">
+      <rect x="0" y="0" width="30" height="45" rx="6" fill="#2E7D5B"/>
+      <rect x="5" y="5" width="20" height="12" rx="2" fill="#FFF"/>
+      <circle cx="15" cy="28" r="6" fill="#FFF"/>
+    </g>
+  </g>
+</svg>

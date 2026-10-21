@@ -1,0 +1,17 @@
+{
+  "name": "Saka Souvenir Lebaran",
+  "short_name": "Saka Souvenir Lebaran",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2FBF6",
+  "theme_color": "#2E7D5B",
+  "description": "Pesan souvenir, hampers & gift Lebaran eksklusif, bisa custom logo perusahaan. Kirim ke seluruh Indonesia.",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.webp",
+      "sizes": "64x64 192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

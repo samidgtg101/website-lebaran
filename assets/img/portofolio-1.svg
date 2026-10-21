@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380" fill="none">
+  <rect width="500" height="380" fill="#EBF7F0"/>
+  <!-- Stacks of Boxes for Corporate Client -->
+  <g transform="translate(50, 40)">
+    <!-- Box row in background -->
+    <rect x="20" y="30" width="160" height="110" rx="10" fill="#2E7D5B" opacity="0.8"/>
+    <rect x="220" y="30" width="160" height="110" rx="10" fill="#2E7D5B" opacity="0.8"/>
+    
+    <!-- Foreground Luxury Box -->
+    <rect x="70" y="100" width="260" height="180" rx="14" fill="#1F5C42"/>
+    <rect x="66" y="92" width="268" height="16" rx="6" fill="#2E7D5B"/>
+    <!-- Red/Gold corporate accent band -->
+    <rect x="150" y="92" width="100" height="188" fill="#FFF9EC"/>
+    <rect x="160" y="120" width="80" height="60" rx="8" fill="#F2FBF6" stroke="#2E7D5B" stroke-width="1.5"/>
+    <circle cx="200" cy="142" r="14" fill="#B3261E"/>
+    <text x="200" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#FFF" text-anchor="middle">TELKOM</text>
+    <text x="200" y="168" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" fill="#16372A" text-anchor="middle">500 PCS ORDER</text>
+
+    <!-- Glass Jars on top -->
+    <rect x="90" y="30" width="55" height="65" rx="8" fill="#FFF8E7" stroke="#C9A23F" stroke-width="1.5"/>
+    <circle cx="117" cy="62" r="16" fill="#E6A838"/>
+  </g>
+  <rect x="0" y="320" width="500" height="60" fill="rgba(22, 55, 42, 0.9)"/>
+  <text x="24" y="345" font-family="'Fraunces', serif" font-size="15" font-weight="700" fill="#FFF">PT Telkom Indonesia (500 Pcs)</text>
+  <text x="24" y="363" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#DFF3E8">Hampers Corporate Custom Logo • Lebaran 2026</text>
+</svg>
