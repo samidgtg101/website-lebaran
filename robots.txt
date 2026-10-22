@@ -22,4 +22,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://sakasouvenir.id/sitemap.xml
+Sitemap: https://souvenirlebaran.web.id/sitemap.xml
