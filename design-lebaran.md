@@ -45,7 +45,7 @@ Dokumen pendamping: `PRD-lebaran.md`.
 | Peran | Font | Fallback | Bobot |
 |---|---|---|---|
 | Heading | **Fraunces** (serif lembut) | `Georgia, serif` | 600, 700 |
-| Body & UI | **Plus Jakarta Sans** | `system-ui, -apple-system, Segoe UI, sans-serif` | 400, 500, 600 |
+| Body & UI | **Plus Malang Sans** | `system-ui, -apple-system, Segoe UI, sans-serif` | 400, 500, 600 |
 | Aksen Arab/kaligrafi (opsional, dekoratif) | Amiri | `serif` | 400 |
 
 Self-host WOFF2, `font-display: swap`, subset Latin, preload font body.
@@ -79,7 +79,7 @@ Gunakan `clamp()` untuk skala fluid, mis. `font-size: clamp(2.25rem, 1.6rem + 3v
   --c-text-muted:#4F6B5E; --c-wa:#25D366; --c-wa-dark:#128C4A; --c-danger:#B3261E;
 
   --font-head:"Fraunces",Georgia,serif;
-  --font-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Plus Malang Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
 
   --r-sm:8px; --r-md:16px; --r-lg:24px; --r-pill:999px;
   --sh-sm:0 2px 8px rgba(22,55,42,.06); --sh-md:0 8px 24px rgba(22,55,42,.10);

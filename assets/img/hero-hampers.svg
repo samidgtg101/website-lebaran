@@ -157,8 +157,8 @@
         <!-- Star Motif on card -->
         <path d="M30 20 l2 4 5 1 -4 3 1 5 -4 -2 -4 2 1 -5 -4 -3 5 -1 z" fill="#C9A23F"/>
         <text x="30" y="44" font-family="'Fraunces', serif" font-size="7.5" font-weight="700" fill="#16372A" text-anchor="middle">EID MUBARAK</text>
-        <text x="30" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="500" fill="#4F6B5E" text-anchor="middle">Taqabbalallahu</text>
-        <text x="30" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-size="5.5" font-weight="500" fill="#4F6B5E" text-anchor="middle">Minna Wa Minkum</text>
+        <text x="30" y="55" font-family="'Plus Malang Sans', sans-serif" font-size="5.5" font-weight="500" fill="#4F6B5E" text-anchor="middle">Taqabbalallahu</text>
+        <text x="30" y="63" font-family="'Plus Malang Sans', sans-serif" font-size="5.5" font-weight="500" fill="#4F6B5E" text-anchor="middle">Minna Wa Minkum</text>
       </g>
     </g>
 

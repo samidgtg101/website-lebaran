@@ -30,17 +30,17 @@
   <g transform="translate(100, 130)">
     <!-- Brand Badge -->
     <rect x="0" y="0" width="310" height="42" rx="21" fill="#2E7D5B"/>
-    <text x="155" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#FFF9EC" text-anchor="middle" letter-spacing="1">PRE-ORDER LEBARAN 2027</text>
+    <text x="155" y="27" font-family="'Plus Malang Sans', sans-serif" font-size="14" font-weight="700" fill="#FFF9EC" text-anchor="middle" letter-spacing="1">PRE-ORDER LEBARAN 2027</text>
 
     <!-- Main Title -->
     <text x="0" y="115" font-family="'Fraunces', serif" font-size="54" font-weight="700" fill="#FFFFFF">Souvenir &amp; Hampers</text>
     <text x="0" y="180" font-family="'Fraunces', serif" font-size="54" font-weight="700" fill="url(#goldText)">Lebaran Eksklusif</text>
     
     <!-- Subtitle -->
-    <text x="0" y="235" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="400" fill="#DFF3E8">Bisa Custom Logo Perusahaan • Kemasan Rapi • Kirim Seluruh Indonesia</text>
+    <text x="0" y="235" font-family="'Plus Malang Sans', sans-serif" font-size="22" font-weight="400" fill="#DFF3E8">Bisa Custom Logo Perusahaan • Kemasan Rapi • Kirim Seluruh Indonesia</text>
 
     <!-- Bullets -->
-    <g transform="translate(0, 275)" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="600" fill="#FFF">
+    <g transform="translate(0, 275)" font-family="'Plus Malang Sans', sans-serif" font-size="17" font-weight="600" fill="#FFF">
       <circle cx="10" cy="8" r="5" fill="#C9A23F"/>
       <text x="26" y="14">Paket Hemat, Reguler, Premium &amp; Corporate</text>
 

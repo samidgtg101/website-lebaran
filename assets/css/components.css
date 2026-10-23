@@ -728,14 +728,17 @@
 .lb-table-wrap {
   border: 1px solid var(--c-mint-200);
   border-radius: var(--r-lg);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: visible;
   box-shadow: var(--sh-sm);
   background: var(--c-white);
+  -webkit-overflow-scrolling: touch;
 }
 
 .lb-table {
   margin-bottom: 0;
   width: 100%;
+  min-width: 540px;
 }
 
 .lb-table th {
@@ -744,6 +747,7 @@
   font-family: var(--font-head);
   padding: 16px 20px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .lb-table td {
@@ -752,8 +756,44 @@
   border-color: var(--c-mint-200);
 }
 
+/* Sticky first column (Parameter) on mobile */
+.lb-table th:first-child,
+.lb-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: var(--c-white);
+  box-shadow: 2px 0 6px rgba(0,0,0,0.06);
+}
+
+.lb-table th:first-child {
+  background-color: var(--c-primary);
+  z-index: 3;
+}
+
 .lb-table tr.highlight-col {
   background-color: var(--c-mint-100);
+}
+
+/* Mobile: tighter padding */
+@media (max-width: 575.98px) {
+  .lb-table th,
+  .lb-table td {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+
+  .lb-table td:first-child,
+  .lb-table th:first-child {
+    min-width: 120px;
+    max-width: 130px;
+    font-size: 0.8rem;
+  }
+
+  .lb-table td:not(:first-child),
+  .lb-table th:not(:first-child) {
+    min-width: 110px;
+  }
 }
 
 /* 14. Custom WA Form */

@@ -8,10 +8,10 @@
     <!-- Mosque Silhouette Icon -->
     <path d="M150 145 L150 135 Q170 115 190 135 L190 145 Z" fill="#2E7D5B"/>
     <rect x="165" y="132" width="10" height="13" rx="2" fill="#C9A23F"/>
-    <text x="170" y="175" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFF">Masjid Al-Azhar</text>
-    <text x="170" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#DFF3E8">200 Paket Santunan Dhuafa</text>
+    <text x="170" y="175" font-family="'Plus Malang Sans', sans-serif" font-size="11" font-weight="700" fill="#FFF">Masjid Al-Azhar</text>
+    <text x="170" y="195" font-family="'Plus Malang Sans', sans-serif" font-size="9" fill="#DFF3E8">200 Paket Santunan Dhuafa</text>
   </g>
   <rect x="0" y="320" width="500" height="60" fill="rgba(22, 55, 42, 0.9)"/>
   <text x="24" y="345" font-family="'Fraunces', serif" font-size="15" font-weight="700" fill="#FFF">Yayasan Masjid Agung Al-Azhar (200 Pcs)</text>
-  <text x="24" y="363" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#DFF3E8">Paket Hemat Berkah Ramadan &amp; Santunan</text>
+  <text x="24" y="363" font-family="'Plus Malang Sans', sans-serif" font-size="12" fill="#DFF3E8">Paket Hemat Berkah Ramadan &amp; Santunan</text>
 </svg>
