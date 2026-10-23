@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -13,6 +13,8 @@ const MIME_TYPES = {
   '.webmanifest': 'application/manifest+json; charset=utf-8',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.webp': 'image/webp',
   '.svg': 'image/svg+xml',
   '.txt': 'text/plain; charset=utf-8',
   '.xml': 'application/xml; charset=utf-8'
@@ -20,36 +22,65 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   let reqUrl = decodeURI(req.url.split('?')[0]);
-  if (reqUrl.endsWith('/')) {
-    reqUrl += 'index.html';
+
+  // Redirect: remove .html extension from URL
+  if (reqUrl.endsWith('.html')) {
+    const clean = reqUrl.slice(0, -5);
+    const location = (clean === '' || clean === '/index') ? '/' : clean;
+    res.writeHead(301, { 'Location': location });
+    res.end();
+    return;
   }
 
-  let filePath = path.join(PUBLIC_DIR, reqUrl);
-
-  // If path is a directory without trailing slash, redirect to trailing slash
-  if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
-    filePath = path.join(filePath, 'index.html');
+  // Redirect: remove trailing slash (except root /)
+  if (reqUrl.length > 1 && reqUrl.endsWith('/')) {
+    res.writeHead(301, { 'Location': reqUrl.slice(0, -1) });
+    res.end();
+    return;
   }
 
-  fs.readFile(filePath, (err, content) => {
-    if (err) {
-      if (err.code === 'ENOENT') {
-        const notFoundPath = path.join(PUBLIC_DIR, '404.html');
-        fs.readFile(notFoundPath, (err404, content404) => {
-          res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
-          res.end(content404 || '404 Not Found');
-        });
-      } else {
-        res.writeHead(500);
-        res.end(`Server Error: ${err.code}`);
-      }
-    } else {
-      const ext = path.extname(filePath).toLowerCase();
-      const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-      res.writeHead(200, { 'Content-Type': contentType });
+  // Serve root / -> index.html
+  if (reqUrl === '/') {
+    const indexPath = path.join(PUBLIC_DIR, 'index.html');
+    if (fs.existsSync(indexPath)) {
+      const content = fs.readFileSync(indexPath);
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(content);
+      return;
     }
-  });
+  }
+
+  const filePath = path.join(PUBLIC_DIR, reqUrl);
+
+  // Serve asset files directly (.css, .js, .png, .webp, etc.)
+  if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+    const ext = path.extname(filePath).toLowerCase();
+    const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+    const content = fs.readFileSync(filePath);
+    res.writeHead(200, { 'Content-Type': contentType });
+    res.end(content);
+    return;
+  }
+
+  // Clean URL: /blog -> blog.html, /paket/hemat -> paket/hemat.html
+  const htmlPath = filePath + '.html';
+  if (fs.existsSync(htmlPath)) {
+    const content = fs.readFileSync(htmlPath);
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(content);
+    return;
+  }
+
+  // 404
+  const notFoundPath = path.join(PUBLIC_DIR, '404.html');
+  if (fs.existsSync(notFoundPath)) {
+    const content404 = fs.readFileSync(notFoundPath);
+    res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(content404);
+  } else {
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('404 Not Found');
+  }
 });
 
 server.listen(PORT, '127.0.0.1', () => {
