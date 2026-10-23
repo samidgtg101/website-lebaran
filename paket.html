@@ -254,82 +254,91 @@
 
       <!-- Comparison Table -->
       <section class="mb-5">
-        <h2 class="h3 fw-bold mb-3">Tabel Perbandingan Fitur Paket</h2>
-        <p class="text-muted small d-md-none mb-2">👈 Geser ke kanan untuk melihat semua kolom</p>
-        <div class="table-responsive lb-table-wrap">
-          <table class="table lb-table align-middle">
-            <thead>
-              <tr>
-                <th scope="col" style="min-width: 130px;">Parameter</th>
-                <th scope="col">Paket Hemat</th>
-                <th scope="col" class="bg-primary-dark">Paket Reguler ⭐</th>
-                <th scope="col">Paket Premium</th>
-                <th scope="col">Corporate B2B</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Harga Mulai</strong></td>
-                <td>Rp 45.000</td>
-                <td class="fw-bold text-success bg-mint-100">Rp 95.000</td>
-                <td>Rp 250.000</td>
-                <td>Rp 175.000</td>
-              </tr>
-              <tr>
-                <td><strong>Jenis Kemasan</strong></td>
-                <td>Pouch Canvas / Goodie Bag</td>
-                <td class="bg-mint-100">Hard Sleeve Box Rapi</td>
-                <td>Rigid Luxury Hardbox</td>
-                <td>Executive Box + Custom Sleeve</td>
-              </tr>
-              <tr>
-                <td><strong>Isi Kue Kering</strong></td>
-                <td>1 Toples 250gr</td>
-                <td class="bg-mint-100">2 Toples Kaca 350gr</td>
-                <td>3 Toples Kaca Kristal (Wisman)</td>
-                <td>2-3 Toples / Tumbler / Kurma</td>
-              </tr>
-              <tr>
-                <td><strong>Pelengkap Ibadah</strong></td>
-                <td>Digital Tasbih</td>
-                <td class="bg-mint-100">Sajadah Travel Waterproof</td>
-                <td>Sajadah Turki + Tasbih Kristal</td>
-                <td>Opsional Sesuai Request</td>
-              </tr>
-              <tr>
-                <td><strong>Minimal Order (MOQ)</strong></td>
-                <td>30 pcs</td>
-                <td class="bg-mint-100">20 pcs</td>
-                <td>10 pcs</td>
-                <td>25 pcs</td>
-              </tr>
-              <tr>
-                <td><strong>Custom Logo</strong></td>
-                <td>Pada Hang Tag</td>
-                <td class="bg-mint-100">Pada Kartu &amp; Sleeve</td>
-                <td>Gold Hotprint Emboss</td>
-                <td>Full Branding Identitas Kantor</td>
-              </tr>
-              <tr>
-                <td><strong>Estimasi Lead Time</strong></td>
-                <td>7–10 Hari Kerja</td>
-                <td class="bg-mint-100">10–14 Hari Kerja</td>
-                <td>14–18 Hari Kerja</td>
-                <td>14–21 Hari Kerja</td>
-              </tr>
-              <tr>
-                <td><strong>Aksi Pemesanan</strong></td>
-                <td><a href="/paket/hemat" class="btn btn-outline-lebaran btn-sm">Pilih</a></td>
-                <td class="bg-mint-100"><a href="/paket/reguler" class="btn btn-primary btn-sm">Pilih
-                    Favorit</a></td>
-                <td><a href="/paket/premium" class="btn btn-outline-lebaran btn-sm">Pilih</a></td>
-                <td><a href="/paket/hampers-corporate" class="btn btn-outline-lebaran btn-sm">Konsultasi
-                    B2B</a></td>
-              </tr>
-            </tbody>
-          </table>
+        <h2 class="h3 fw-bold mb-1">Tabel Perbandingan Fitur Paket</h2>
+
+        <!-- Swipe hint: only visible on mobile -->
+        <p class="lb-table-hint mb-2" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+          </svg>
+          Geser untuk melihat semua kolom
+        </p>
+
+        <div class="lb-table-outer">
+          <div class="lb-table-wrap">
+            <table class="table lb-table align-middle">
+              <thead>
+                <tr>
+                  <th scope="col" style="min-width: 130px;">Parameter</th>
+                  <th scope="col" style="min-width: 130px;">Paket Hemat</th>
+                  <th scope="col" class="bg-primary-dark" style="min-width: 130px;">Paket Reguler ⭐</th>
+                  <th scope="col" style="min-width: 130px;">Paket Premium</th>
+                  <th scope="col" style="min-width: 150px;">Corporate B2B</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Harga Mulai</strong></td>
+                  <td>Rp 45.000</td>
+                  <td class="fw-bold text-success bg-mint-100">Rp 95.000</td>
+                  <td>Rp 250.000</td>
+                  <td>Rp 175.000</td>
+                </tr>
+                <tr>
+                  <td><strong>Jenis Kemasan</strong></td>
+                  <td>Pouch Canvas / Goodie Bag</td>
+                  <td class="bg-mint-100">Hard Sleeve Box Rapi</td>
+                  <td>Rigid Luxury Hardbox</td>
+                  <td>Executive Box + Custom Sleeve</td>
+                </tr>
+                <tr>
+                  <td><strong>Isi Kue Kering</strong></td>
+                  <td>1 Toples 250gr</td>
+                  <td class="bg-mint-100">2 Toples Kaca 350gr</td>
+                  <td>3 Toples Kaca Kristal (Wisman)</td>
+                  <td>2-3 Toples / Tumbler / Kurma</td>
+                </tr>
+                <tr>
+                  <td><strong>Pelengkap Ibadah</strong></td>
+                  <td>Digital Tasbih</td>
+                  <td class="bg-mint-100">Sajadah Travel Waterproof</td>
+                  <td>Sajadah Turki + Tasbih Kristal</td>
+                  <td>Opsional Sesuai Request</td>
+                </tr>
+                <tr>
+                  <td><strong>Minimal Order (MOQ)</strong></td>
+                  <td>30 pcs</td>
+                  <td class="bg-mint-100">20 pcs</td>
+                  <td>10 pcs</td>
+                  <td>25 pcs</td>
+                </tr>
+                <tr>
+                  <td><strong>Custom Logo</strong></td>
+                  <td>Pada Hang Tag</td>
+                  <td class="bg-mint-100">Pada Kartu &amp; Sleeve</td>
+                  <td>Gold Hotprint Emboss</td>
+                  <td>Full Branding Identitas Kantor</td>
+                </tr>
+                <tr>
+                  <td><strong>Estimasi Lead Time</strong></td>
+                  <td>7–10 Hari Kerja</td>
+                  <td class="bg-mint-100">10–14 Hari Kerja</td>
+                  <td>14–18 Hari Kerja</td>
+                  <td>14–21 Hari Kerja</td>
+                </tr>
+                <tr>
+                  <td><strong>Aksi Pemesanan</strong></td>
+                  <td><a href="/paket/hemat" class="btn btn-outline-lebaran btn-sm">Pilih</a></td>
+                  <td class="bg-mint-100"><a href="/paket/reguler" class="btn btn-primary btn-sm">Pilih Favorit</a></td>
+                  <td><a href="/paket/premium" class="btn btn-outline-lebaran btn-sm">Pilih</a></td>
+                  <td><a href="/paket/hampers-corporate" class="btn btn-outline-lebaran btn-sm">Konsultasi B2B</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
+
 
       <!-- Selection Guide -->
       <div class="p-4 bg-cream rounded-4 border mb-5">
