@@ -1,10 +1,10 @@
 /**
  * wa.js — WhatsApp Integration & Dynamic Lead Routing
- * Target Number: 6282211221909
+ * Target Number: 6282131087971
  */
 
 const WA_CONFIG = {
-  phone: '6282211221909',
+  phone: '6282131087971',
   brandName: 'Saka Souvenir Lebaran',
   defaultText: 'Halo Saka Souvenir Lebaran, saya ingin tanya souvenir/hampers Lebaran 2027.'
 };

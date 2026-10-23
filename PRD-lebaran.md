@@ -80,8 +80,8 @@ Navbar:  [Logo]  Beranda | Tentang | Paket ▾ | Portofolio | Blog      [Pesan v
 
 ## 4. Integrasi WhatsApp (Wajib)
 
-**Nomor:** `6282211221909` (format internasional tanpa `+`/`0`).
-**Format URL:** `https://wa.me/6282211221909?text=<pesan ter-encode>`
+**Nomor:** `6282131087971` (format internasional tanpa `+`/`0`).
+**Format URL:** `https://wa.me/6282131087971?text=<pesan ter-encode>`
 
 | Lokasi tombol | Pesan prefilled |
 |---|---|
@@ -94,14 +94,14 @@ Navbar:  [Logo]  Beranda | Tentang | Paket ▾ | Portofolio | Blog      [Pesan v
 | Portofolio | Halo, saya suka proyek *[nama proyek]*. Bisa dibuatkan yang serupa? |
 | Artikel blog | Halo, saya baca artikel *[judul]* dan ingin konsultasi paket. |
 
-Contoh: `https://wa.me/6282211221909?text=Halo%20%5BNama%20Brand%5D%2C%20saya%20ingin%20tanya%20souvenir%20Lebaran.`
+Contoh: `https://wa.me/6282131087971?text=Halo%20%5BNama%20Brand%5D%2C%20saya%20ingin%20tanya%20souvenir%20Lebaran.`
 
 **Persyaratan teknis**
 - Semua link WA: `target="_blank" rel="noopener noreferrer"` + `aria-label` deskriptif.
 - Floating WA button kanan-bawah, aman dari safe-area iOS, tidak menutup footer/CTA lain.
 - Form brief di `/paket/custom/` (nama, jumlah, budget, tanggal butuh, catatan) → JS menyusun teks → `encodeURIComponent` → buka `wa.me`. Tanpa backend.
 - Event GA4 `click_whatsapp` (parameter `placement`, `package`, `page`), tandai sebagai key event.
-- Fallback: tampilkan nomor `0822-1122-1909` di footer & kontak (`tel:+6282211221909`).
+- Fallback: tampilkan nomor `0822-1122-1909` di footer & kontak (`tel:+6282131087971`).
 - Atribut data: `data-wa-text="..."` pada elemen; satu skrip `wa.js` membangun URL.
 
 ---
@@ -269,7 +269,7 @@ Sitemap: https://namadomain.com/sitemap.xml
 - [FAQ](https://namadomain.com/faq/): pemesanan, pembayaran, pengiriman
 
 ## Kontak
-- WhatsApp: https://wa.me/6282211221909
+- WhatsApp: https://wa.me/6282131087971
 ```
 
 ### 6.5 SEO lokal
@@ -344,7 +344,7 @@ Gunakan `<script type="application/ld+json">` di `<head>`, satu `@graph` per hal
       "logo": { "@type": "ImageObject", "url": "https://namadomain.com/assets/img/logo-512.png", "width": 512, "height": 512 },
       "image": "https://namadomain.com/assets/img/og-default.jpg",
       "description": "Souvenir, hampers, dan gift Lebaran custom dengan pengiriman ke seluruh Indonesia.",
-      "telephone": "+6282211221909",
+      "telephone": "+6282131087971",
       "email": "halo@namadomain.com",
       "priceRange": "Rp50.000 - Rp1.000.000",
       "address": {
@@ -364,10 +364,10 @@ Gunakan `<script type="application/ld+json">` di `<head>`, satu `@graph` per hal
       "areaServed": { "@type": "Country", "name": "Indonesia" },
       "contactPoint": [{
         "@type": "ContactPoint",
-        "telephone": "+6282211221909",
+        "telephone": "+6282131087971",
         "contactType": "customer service",
         "availableLanguage": ["id"],
-        "url": "https://wa.me/6282211221909"
+        "url": "https://wa.me/6282131087971"
       }],
       "sameAs": [
         "https://www.instagram.com/[akun]",
@@ -530,7 +530,7 @@ Gunakan `<script type="application/ld+json">` di `<head>`, satu `@graph` per hal
 
 ## 15. Kriteria Penerimaan
 - [ ] 5 menu utama + dropdown Paket berfungsi di desktop & mobile
-- [ ] Semua tombol WA ke `6282211221909` dengan pesan sesuai konteks
+- [ ] Semua tombol WA ke `6282131087971` dengan pesan sesuai konteks
 - [ ] Tiap halaman punya title, description, canonical, OG, Twitter, JSON-LD valid
 - [ ] Rich Results Test & Schema Validator tanpa error
 - [ ] Lighthouse Mobile & CWV sesuai target

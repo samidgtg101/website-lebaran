@@ -181,7 +181,7 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--c-ink)}
           <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
           <li class="nav-item ms-lg-3">
             <a class="btn btn-wa" target="_blank" rel="noopener noreferrer"
-               href="https://wa.me/6282211221909?text=Halo%20%5BNama%20Brand%5D%2C%20saya%20ingin%20tanya%20souvenir%20Lebaran."
+               href="https://wa.me/6282131087971?text=Halo%20%5BNama%20Brand%5D%2C%20saya%20ingin%20tanya%20souvenir%20Lebaran."
                data-wa-placement="navbar">Pesan via WA</a>
           </li>
         </ul>
