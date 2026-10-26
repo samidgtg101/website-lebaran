@@ -2,6 +2,18 @@
  * main.js — Global UI Interactions, Lightbox & Navigation
  */
 
+// Clean URLs on HTTP/HTTPS: remove .html and index.html from address bar
+(function cleanUrlOnWebServer() {
+  if (typeof window !== 'undefined' && (window.location.protocol === 'http:' || window.location.protocol === 'https:')) {
+    const path = window.location.pathname;
+    if (path.endsWith('.html') || path.endsWith('/index') || path.endsWith('index')) {
+      let clean = path.replace(/(\/)?index(\.html)?$/, '$1').replace(/\.html$/, '');
+      if (!clean) clean = '/';
+      window.history.replaceState(null, '', clean + window.location.search + window.location.hash);
+    }
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Announcement Banner & Session Storage
   const banner = document.getElementById('top-announcement-banner');

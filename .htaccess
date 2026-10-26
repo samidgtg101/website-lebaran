@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Redirect /index.html and /index to root /
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index(?:\.html)?[\s?] [NC]
+  RewriteRule ^index(?:\.html)?$ / [R=301,L]
+
+  # 2. Redirect /path/index.html to /path
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)/index(?:\.html)?[\s?] [NC]
+  RewriteRule ^(.*?)/index(?:\.html)?$ /$1 [R=301,L]
+
+  # 3. Redirect any request with .html extension to clean URL without .html
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+([^.]+)\.html[\s?] [NC]
+  RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+  # 4. Handle /blog and /paket specifically (folders exist, but page is blog.html / paket.html)
+  RewriteRule ^blog/?$ blog.html [L]
+  RewriteRule ^paket/?$ paket.html [L]
+
+  # 5. Internal rewrite for clean URLs: serve .html if file exists
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+</IfModule>
+
+# Custom 404
+ErrorDocument 404 /404.html

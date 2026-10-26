@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/blog", "dest": "/blog.html" },
+    { "src": "/blog/", "dest": "/blog.html" },
+    { "src": "/paket", "dest": "/paket.html" },
+    { "src": "/paket/", "dest": "/paket.html" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ]
+}
