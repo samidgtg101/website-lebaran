@@ -786,23 +786,18 @@
 }
 
 /* 13. Comparison Table */
-<<<<<<< HEAD
+.lb-table-outer,
 .lb-table-wrap,
 .table-responsive {
-=======
-.lb-table-outer {
->>>>>>> ae9acfc69f94e5fbf313b96ed244628c0405c895
   border: 1px solid var(--c-mint-200);
   border-radius: var(--r-lg);
   overflow-x: auto !important;
   -webkit-overflow-scrolling: touch;
   box-shadow: var(--sh-sm);
   background: var(--c-white);
-<<<<<<< HEAD
   max-width: 100%;
   display: block;
   width: 100%;
-=======
   position: relative;
 }
 
@@ -844,17 +839,12 @@
 }
 @media (max-width: 767.98px) {
   .lb-table-hint { display: flex; }
->>>>>>> ae9acfc69f94e5fbf313b96ed244628c0405c895
 }
 
 .lb-table {
   margin-bottom: 0;
   width: 100%;
-<<<<<<< HEAD
-  min-width: 580px;
-=======
   min-width: 620px; /* guarantee table never collapses smaller than this */
->>>>>>> ae9acfc69f94e5fbf313b96ed244628c0405c895
 }
 
 .lb-table th {
