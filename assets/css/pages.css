@@ -408,3 +408,96 @@
     display: none;
   }
 }
+
+/* ==========================================================
+   GLOBAL RESPONSIVE SAFETY NET — Desktop, tablet and mobile
+   Added without replacing the existing design or components.
+   ========================================================== */
+html { width: 100%; max-width: 100%; overflow-x: clip; }
+body { width: 100%; min-width: 0; overflow-x: clip; }
+img, picture, video, canvas, iframe, svg { max-width: 100%; }
+img, video { height: auto; }
+input, select, textarea, button { max-width: 100%; }
+.container, .container-fluid { --bs-gutter-x: clamp(1rem, 3vw, 2rem); }
+.row { min-width: 0; }
+.row > * { min-width: 0; }
+[class*="col-"] { min-width: 0; }
+pre, code { overflow-wrap: anywhere; }
+.table-responsive { -webkit-overflow-scrolling: touch; }
+
+/* Prevent long titles, URLs and product names from pushing the viewport */
+h1, h2, h3, h4, h5, h6, p, a, li, .card-title, .nav-link {
+  overflow-wrap: break-word;
+}
+
+/* Common image and card patterns */
+.card, .lb-card, .lb-product-card, .lb-portfolio-card, .lb-blog-card {
+  min-width: 0;
+  max-width: 100%;
+}
+.card img, .lb-product-card img, .lb-portfolio-card img, .lb-blog-card img {
+  max-width: 100%;
+}
+
+/* Navbar: let Bootstrap's collapse menu fit smaller screens */
+.navbar > .container,
+.navbar > .container-fluid { flex-wrap: wrap; }
+.navbar-toggler { flex-shrink: 0; }
+.navbar-collapse { min-width: 0; }
+
+/* Fluid spacing and controls for tablet and phone */
+@media (max-width: 991.98px) {
+  .section-padding { padding-top: clamp(2.5rem, 7vw, 4rem); padding-bottom: clamp(2.5rem, 7vw, 4rem); }
+  .lb-hero { padding-top: clamp(2rem, 6vw, 3rem); padding-bottom: clamp(2.5rem, 7vw, 4.5rem); }
+  .navbar-lebaran { height: auto; min-height: 64px; }
+  .navbar-lebaran .navbar-collapse { flex-basis: 100%; }
+  .navbar-lebaran .navbar-nav { padding: .5rem 0 .75rem; gap: .15rem; }
+  .navbar-lebaran .nav-link { padding: .7rem .85rem !important; }
+  .lb-hero-float-badge { max-width: calc(100% - 20px); }
+  .table { min-width: 560px; }
+}
+
+@media (max-width: 767.98px) {
+  body { font-size: .97rem; }
+  .container, .container-fluid { --bs-gutter-x: 1.25rem; }
+  h1, .h1 { font-size: clamp(2rem, 7vw, 2.8rem); line-height: 1.14; }
+  h2, .h2 { font-size: clamp(1.6rem, 5.5vw, 2.15rem); }
+  h3, .h3 { font-size: clamp(1.2rem, 4.5vw, 1.55rem); }
+  .lb-hero { text-align: center; }
+  .lb-hero .btn, .lb-hero a.btn { margin-top: .25rem; }
+  .lb-hero-arch-wrap { max-width: min(100%, 380px); }
+  .lb-hero-float-badge { left: 8px; bottom: 8px; padding: 9px 12px; gap: 8px; font-size: .85rem; }
+  .lb-trust-stat-number { font-size: clamp(1.45rem, 5vw, 1.9rem); }
+  .lb-filter-nav { gap: 6px; margin-bottom: 1.5rem; }
+  .lb-filter-btn { padding: 8px 13px; font-size: .85rem; }
+  .btn { white-space: normal; }
+  .d-flex.gap-3, .d-flex.gap-4 { flex-wrap: wrap; }
+  .lb-announcement { font-size: .8rem; padding: 8px 12px; }
+  .lb-announcement a { margin-left: 2px; }
+}
+
+@media (max-width: 575.98px) {
+  .container, .container-fluid { --bs-gutter-x: 1rem; }
+  .section-padding { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .section-padding-sm { padding-top: 1.75rem; padding-bottom: 1.75rem; }
+  .navbar-lebaran .navbar-brand { font-size: 1.1rem; gap: 7px; min-width: 0; }
+  .navbar-lebaran .navbar-brand span { overflow-wrap: normal; }
+  .lb-hero-bg-moon { width: 220px; height: 220px; right: -55px; top: -20px; }
+  .lb-hero-arch { border-width: 3px; }
+  .lb-hero-float-badge { font-size: .78rem; }
+  .lb-trust-bar { padding: 14px 0; }
+  .lb-trust-stat { padding: 8px 4px; }
+  .card-body { padding: 1rem; }
+  .btn-lg { --bs-btn-padding-y: .7rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 1rem; }
+  .form-control, .form-select { min-height: 44px; }
+  .table { min-width: 520px; }
+  footer .row { row-gap: 1.25rem; }
+}
+
+@media (max-width: 359.98px) {
+  .container, .container-fluid { --bs-gutter-x: .75rem; }
+  .navbar-lebaran .navbar-brand { font-size: 1rem; }
+  .navbar-brand-logo, .navbar-lebaran .navbar-brand img { width: 32px; height: 32px; max-width: 32px; max-height: 32px; }
+  h1, .h1 { font-size: 1.85rem; }
+  .lb-filter-btn { padding: 7px 10px; font-size: .8rem; }
+}
