@@ -10,6 +10,8 @@
 - [Hampers Corporate](https://souvenirlebaran.web.id/paket/hampers-corporate): Custom logo perusahaan, faktur pajak/invoice, multi-alamat kantor
 - [Request Custom](https://souvenirlebaran.web.id/paket/custom): Form konsultasi & brief custom via WhatsApp
 - [Portofolio](https://souvenirlebaran.web.id/portofolio): Dokumentasi proyek BUMN, swasta, dan komunitas
+- [Portofolio Penulis](https://souvenirlebaran.web.id/portofolio-penulis): Portofolio karya tulis & kurasi studi kasus oleh Dimas Aji Prasetyo
+- [Profil Penulis](https://souvenirlebaran.web.id/penulis): Profil kurator & penulis artikel Dimas Aji Prasetyo
 - [Blog](https://souvenirlebaran.web.id/blog): Artikel & panduan hampers Lebaran
 - [Tentang Kami](https://souvenirlebaran.web.id/tentang): Profil pengrajin dan tim
 - [FAQ](https://souvenirlebaran.web.id/faq): Pertanyaan seputar pemesanan, pembayaran DP, pengiriman, dan garansi
