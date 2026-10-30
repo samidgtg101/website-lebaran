@@ -101,7 +101,7 @@ Contoh: `https://wa.me/6282131087971?text=Halo%20%5BNama%20Brand%5D%2C%20saya%20
 - Floating WA button kanan-bawah, aman dari safe-area iOS, tidak menutup footer/CTA lain.
 - Form brief di `/paket/custom/` (nama, jumlah, budget, tanggal butuh, catatan) → JS menyusun teks → `encodeURIComponent` → buka `wa.me`. Tanpa backend.
 - Event GA4 `click_whatsapp` (parameter `placement`, `package`, `page`), tandai sebagai key event.
-- Fallback: tampilkan nomor `0822-1122-1909` di footer & kontak (`tel:+6282131087971`).
+- Fallback: tampilkan nomor `+62 821-3108-7971` di footer & kontak (`tel:+6282131087971`).
 - Atribut data: `data-wa-text="..."` pada elemen; satu skrip `wa.js` membangun URL.
 
 ---
