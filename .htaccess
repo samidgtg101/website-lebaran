@@ -17,6 +17,7 @@
   # 4. Handle /blog and /paket specifically (folders exist, but page is blog.html / paket.html)
   RewriteRule ^blog/?$ blog.html [L]
   RewriteRule ^paket/?$ paket.html [L]
+  RewriteRule ^penulis/?$ penulis.html [L]
 
   # 5. Internal rewrite for clean URLs: serve .html if file exists
   RewriteCond %{REQUEST_FILENAME} !-d

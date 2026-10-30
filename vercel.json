@@ -6,6 +6,8 @@
     { "src": "/blog/", "dest": "/blog.html" },
     { "src": "/paket", "dest": "/paket.html" },
     { "src": "/paket/", "dest": "/paket.html" },
+    { "src": "/penulis", "dest": "/penulis.html" },
+    { "src": "/penulis/", "dest": "/penulis.html" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
