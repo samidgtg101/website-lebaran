@@ -14,7 +14,7 @@
   <!-- Decorative Crescent Moon in background -->
   <path d="M220 50 A60 60 0 1 0 220 170 A48 48 0 0 1 220 50 Z" fill="#C9A23F" opacity="0.25"/>
 
-  <!-- Founder Portrait Silhouette Illustration (Annisa Wardhana, S.Ds) -->
+  <!-- Founder Portrait Silhouette Illustration (Aditya Yoga) -->
   <g transform="translate(45, 45)">
     <!-- Shoulders / Blouse -->
     <path d="M20 220 C20 175 60 160 105 160 C150 160 190 175 190 220 Z" fill="#FFFDF8" stroke="#C3E6D2" stroke-width="2"/>
