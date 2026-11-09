@@ -5,11 +5,26 @@
 /* 1. Hero Styling */
 .lb-hero {
   position: relative;
-  background: linear-gradient(145deg, var(--c-mint-100) 0%, var(--c-cream) 100%);
+  background-color: #F8FAF7;
+  background-image: 
+    linear-gradient(135deg, rgba(248, 250, 247, 0.88) 0%, rgba(248, 250, 247, 0.74) 52%, rgba(248, 250, 247, 0.38) 100%),
+    url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
   padding-top: 36px;
   padding-bottom: 56px;
   overflow: hidden;
   max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .lb-hero {
+    background-image: 
+      linear-gradient(180deg, rgba(248, 250, 247, 0.92) 0%, rgba(248, 250, 247, 0.82) 60%, rgba(248, 250, 247, 0.55) 100%),
+      url('../img/hero-bg.jpg');
+    background-position: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -20,16 +35,7 @@
 }
 
 .lb-hero-bg-moon {
-  position: absolute;
-  top: -20px;
-  right: -15px;
-  width: 220px;
-  height: 220px;
-  opacity: 0.10;
-  color: var(--c-primary);
-  pointer-events: none;
-  z-index: 1;
-  max-width: 100%;
+  display: none !important;
 }
 
 @media (min-width: 768px) {
