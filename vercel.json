@@ -1,14 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
-    { "src": "/blog", "dest": "/blog/index.html" },
-    { "src": "/blog/", "dest": "/blog/index.html" },
-    { "src": "/paket", "dest": "/paket/index.html" },
-    { "src": "/paket/", "dest": "/paket/index.html" },
-    { "src": "/penulis", "dest": "/penulis.html" },
-    { "src": "/penulis/", "dest": "/penulis.html" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  "rewrites": [
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/blog/", "destination": "/blog/index.html" },
+    { "source": "/paket", "destination": "/paket/index.html" },
+    { "source": "/paket/", "destination": "/paket/index.html" }
   ]
 }
