@@ -5,6 +5,11 @@
 // Clean URLs on HTTP/HTTPS: remove .html and index.html from address bar
 (function cleanUrlOnWebServer() {
   if (typeof window !== 'undefined' && (window.location.protocol === 'http:' || window.location.protocol === 'https:')) {
+    // Skip on local development servers (e.g. VS Code Live Server) that do not support URL rewriting
+    const host = window.location.hostname;
+    if (host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local')) {
+      return;
+    }
     const path = window.location.pathname;
     if (path.endsWith('.html') || path.endsWith('/index') || path.endsWith('index')) {
       let clean = path.replace(/(\/)?index(\.html)?$/, '$1').replace(/\.html$/, '');
