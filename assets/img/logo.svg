@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" width="340" height="64" fill="none" role="img" aria-label="Saka Souvenir Lebaran Logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" width="340" height="64" fill="none" role="img" aria-label="Souvenir Lebaran Logo">
   <!-- Crescent Moon & Khatam Star -->
   <g transform="translate(4, 4)">
     <circle cx="28" cy="28" r="26" fill="#DFF3E8"/>
@@ -12,6 +12,6 @@
     </g>
   </g>
   <!-- Wordmark -->
-  <text x="68" y="32" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#16372A" letter-spacing="-0.3">Saka Souvenir</text>
+  <text x="68" y="32" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#16372A" letter-spacing="-0.3">Souvenir Lebaran</text>
   <text x="69" y="48" font-family="'Plus Malang Sans', sans-serif" font-size="9.5" font-weight="700" fill="#4F6B5E" letter-spacing="2">HAMPERS &amp; GIFT LEBARAN</text>
 </svg>

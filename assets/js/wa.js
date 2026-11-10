@@ -5,8 +5,8 @@
 
 const WA_CONFIG = {
   phone: '6282131087971',
-  brandName: 'Saka Souvenir Lebaran',
-  defaultText: 'Halo Saka Souvenir Lebaran, saya ingin tanya souvenir/hampers Lebaran 2027.'
+  brandName: 'Souvenir Lebaran',
+  defaultText: 'Halo Souvenir Lebaran, saya ingin tanya souvenir/hampers Lebaran 2027.'
 };
 
 /**
