@@ -8,9 +8,20 @@
   "description": "Pesan souvenir, hampers & gift Lebaran eksklusif, bisa custom logo perusahaan. Kirim ke seluruh Indonesia.",
   "icons": [
     {
-      "src": "/assets/img/favicon.webp",
-      "sizes": "64x64 192x192 512x512",
-      "type": "image/svg+xml",
+      "src": "/assets/img/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
